@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MOVIE ROOM HOME</title>
+<link rel="stylesheet" href="home.css" />
+<script src="llll.js" defer></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">MOVIE ROOM</div>
+    <ul class="nav-links">
+      <li class="user-menu">
+        <a href="#"><i class="fas fa-user"></i> User <i class="fas fa-caret-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="#">My List</a></li>
+          <li><a href="index.html">Sign Out</a></li>
+        </ul>
+      </li>
+      <li class="search">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <a href="#"><i class="fas fa-search"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="billboard" id="billboard">
+      <div class="billboard-media" id="billboardMedia"></div>
+      <div class="billboard-content" id="billboardContent">
+        <h1>Featured Movie</h1>
+        <p>Watch the latest trailer now!</p>
+        <button>Play</button>
+        <button>More Info</button>
+      </div>
+    </section>
+
+    <section class="movie-section">
+      <h2>Upcoming Movies</h2>
+      <div class="movie-grid" id="movieGridUpcoming"></div>
+    </section>
+
+    <section class="movie-section">
+      <h2>ONLY ON EX</h2>
+      <div class="movie-grid" id="movieGridExclusive"></div>
+    </section>
+
+    <!-- Additional categories -->
+    <section class="movie-section">
+      <h2>Action Movies</h2>
+      <div class="movie-grid" id="movieGridAction"></div>
+    </section>
+
+    <section class="movie-section">
+      <h2>Comedy Movies</h2>
+      <div class="movie-grid" id="movieGridComedy"></div>
+    </section>
+  </div>
+</body>
+</html>

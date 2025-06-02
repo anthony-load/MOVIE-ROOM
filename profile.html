@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Profile Settings</title>
+<link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+
+<div class="container">
+  <!-- Left: Profile Image Section -->
+  <div class="left-section">
+    <div id="profilePicture">
+      <span>Click to select image</span>
+    </div>
+  </div>
+
+  <!-- Right: Settings Form -->
+  <div class="right-section card settings-panel">
+    <h2>User Settings</h2>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" placeholder="First name">
+
+    <label for="middleName">Middle Name</label>
+    <input type="text" id="middleName" placeholder="Middle name">
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" placeholder="Last name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="user@example.com">
+
+    <label for="age">Age</label>
+    <select id="age">
+      <option value="">Select Age</option>
+    </select>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Password">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" placeholder="Address">
+
+    <div class="static-info">Payment: Coming soon</div>
+    <div class="static-info">Phone: Not compulsory</div>
+
+    <details>
+      <summary>More</summary>
+      <p>Additional settings will go here.</p>
+    </details>
+
+    <div class="button-group">
+      <button id="getStartedBtn" disabled>Get Started</button>
+      <button id="nextBtn" style="display: none;">Next</button>
+      <button id="backBtn" style="display: none;">Back</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Avatar Selection -->
+<div id="avatarModal" class="modal hidden">
+  <div class="modal-content">
+    <h3>Select an Avatar</h3>
+    <div class="image-grid">
+      <img src="https://i.postimg.cc/FKq9c3pM/avatar1.jpg" onclick="setProfileImage(this.src)">
+      <img src="https://i.postimg.cc/vZT1Sw9b/avatar2.jpg" onclick="setProfileImage(this.src)">
+      <img src="https://i.postimg.cc/8P15N07N/avatar3.jpg" onclick="setProfileImage(this.src)">
+      <img src="https://i.postimg.cc/d0YqQyMd/avatar4.jpg" onclick="setProfileImage(this.src)">
+    </div>
+  </div>
+</div>
+
+<script src="profile.js"></script>
+</body>
+</html>
